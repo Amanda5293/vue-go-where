@@ -5,10 +5,12 @@ import App from './App'
 import router from './router'
 // 解决移动端点击事件300ms延迟
 import fastClick from 'fastclick'
+// styles 是在build webpack.base.conf.js 里设置了别名
 // 导入css文件
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 解决移动端1像素边框问题
-import './assets/styles/border.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)

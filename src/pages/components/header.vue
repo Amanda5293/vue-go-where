@@ -23,27 +23,27 @@ export default {
         line-height .86rem
         background $bgColor
         color #ffffff
-        font-size .28rem
         .header-left
             float left
             width .64rem
-          .back-icon
-            text-align center
-            font-size .4rem
+           .back-icon
+              text-align center
+              font-size .4rem
         .header-right
-          float right
-          width 1.24rem
-          text-align center
-          .arrow-icon
-            font-szie .24rem
+            float right
+            width 1.24rem
+            text-align center
+            vertical-align middle
+            .arrow-icon
+                font-size .24rem
         .header-input
-          flex 1
-          height .64rem
-          margin-top .12rem
-          margin-left .2rem
-          padding-left .2rem
-          border-radius .1rem
-          line-height .64rem
-          background-color #ffffff
-          color #ccc
+            flex 1
+            height .64rem
+            margin-top .12rem
+            margin-left .2rem
+            padding-left .2rem
+            border-radius .1rem
+            line-height .64rem
+            background-color #ffffff
+            color #ccc
 </style>
