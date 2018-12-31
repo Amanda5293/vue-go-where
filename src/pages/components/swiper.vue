@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <swiper :options="swiperOption" ref="mySwiper">
+        <swiper :options="adSwiperOption" ref="mySwiper">
             <!-- slides -->
             <swiper-slide v-for="item in adList" :key="item.id">
                 <img class="swiper-img" :src="item.imgSrc">
@@ -15,9 +15,10 @@ export default {
   name: 'AwesomeSwiper',
   data () {
     return {
-      swiperOption: {
+      adSwiperOption: {
         pagination: '.swiper-pagination',
         autoplay: 3000,
+        autoplayDisableOnInteraction: false,
         loop: true
       },
       adList: [{
