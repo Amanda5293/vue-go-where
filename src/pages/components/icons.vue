@@ -79,7 +79,9 @@ export default {
     .container >>> .swiper-container
         height 0
         padding-bottom 50%
-    .icon-wrapper
+    .container
+        padding-bottom .1rem
+       .icon-wrapper
         position relative
         float left
         width 25%
