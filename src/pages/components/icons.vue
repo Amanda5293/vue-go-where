@@ -4,7 +4,7 @@
             <swiper-slide  v-for = "(page,index) of pages" :key="index" >
                 <div class="icon-wrapper" v-for="item in page" :key="item.id">
                     <div class="icon-img-wrapper">
-                        <img class="icon-img" :src="item.imgSrc">
+                        <img class="icon-img" :src="item.imgUrl">
                     </div>
                     <p class="icon-desc">{{item.desc}}</p>
                 </div>
@@ -15,48 +15,14 @@
 <script>
 export default {
   name: 'Icons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       iconSwiperOption: {
         autoplay: 0
-      },
-      iconList: [{
-        id: '0001',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '一日游'
-      }, {
-        id: '0003',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '动植物园'
-      }, {
-        id: '0004',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '游乐场'
-      }, {
-        id: '0005',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '一日游'
-      }, {
-        id: '0006',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '一日游'
-      }, {
-        id: '0007',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '一日游'
-      }, {
-        id: '0008',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '一日游'
-      }, {
-        id: '0009',
-        imgSrc: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '一日游'
-      }]
+      }
     }
   },
   computed: {
@@ -69,6 +35,7 @@ export default {
         }
         pages[page].push(item)
       })
+      console.log(pages)
       return pages
     }
   }

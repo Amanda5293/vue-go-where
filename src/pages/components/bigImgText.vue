@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="img-container">
-            <img class="item-img" :src="recommend.imgSrc" alt="recommend.title">
+            <img class="item-img" :src="recommend.imgUrl" alt="recommend.title">
         </div>
         <div class="item-info">
             <p class="item-title">{{recommend.title}}</p>
