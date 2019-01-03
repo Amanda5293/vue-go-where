@@ -42,7 +42,6 @@ export default {
     },
     getDataSuc (res) {
       const resInfo = res.data
-      console.log(resInfo)
       if (resInfo.ret && resInfo.data) {
         this.city = resInfo.data.city
         this.swiperList = resInfo.data.swiperList

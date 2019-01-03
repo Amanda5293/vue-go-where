@@ -10,9 +10,10 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+    @import '~styles/varibles.styl'
     .container
         height .8rem
-        padding-left .26rem
+        padding-left $paddingLeft
         line-height .8rem
         background-color #eeeeee
         color  #212121
