@@ -1,7 +1,7 @@
 <template>
     <div>
       <city-header></city-header>
-      <city-search :placeholder="'输入城市名或拼音'"></city-search>
+      <city-search v-if="canShow" :cities="allCityData.cities"></city-search>
       <city-list v-if="canShow" :allCityData="allCityData" :curLetterr="curLetterr"></city-list>
       <alphabet-list v-if="canShow"
                     :cities="allCityData.cities"
