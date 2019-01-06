@@ -1,14 +1,22 @@
 <template>
     <div class="container">
-        <div class="btn">{{buttonText}}</div>
+        <div class="btn" @click="select">{{buttonText}}</div>
     </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 export default {
   props: {
     buttonText: String
   },
-  name: 'buttonCom'
+  name: 'buttonCom',
+  methods: {
+    select () {
+      this.changeCity(this.buttonText)
+      this.$router.push('/')
+    },
+    ...mapMutations(['changeCity'])
+  }
 }
 </script>
 <style lang="stylus" scoped>

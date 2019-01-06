@@ -35,7 +35,6 @@ export default {
         }
         pages[page].push(item)
       })
-      console.log(pages)
       return pages
     }
   }

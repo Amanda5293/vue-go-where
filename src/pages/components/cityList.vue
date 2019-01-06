@@ -22,6 +22,7 @@ import ButtonList from '../components/buttonList'
 import ButtonCom from '../components/buttonCom'
 import RowTextList from '../components/rowTextList'
 import BScroll from 'better-scroll'
+import { mapState } from 'vuex'
 export default {
   name: 'cityList',
   props: {
@@ -31,10 +32,10 @@ export default {
   data () {
     return {
       hotCityList: this.allCityData.hotCities,
-      allCities: this.allCityData.cities,
-      currentCity: '北京'
+      allCities: this.allCityData.cities
     }
   },
+  computed: mapState({currentCity: 'city'}),
   components: {
     BigTitle,
     ButtonCom,
