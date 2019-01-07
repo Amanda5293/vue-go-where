@@ -8,11 +8,11 @@
     </div>
 </template>
 <script>
-import HomeHeader from '../components/header'
-import Swiper from '../components/swiper'
+import HomeHeader from './components/header'
+import Swiper from './components/swiper'
 import Icons from '../components/icons'
-import HotRecommend from '../components/hotRecommend'
-import WeekendRecommend from '../components/weekendRecommend'
+import HotRecommend from './components/hotRecommend'
+import WeekendRecommend from './components/weekendRecommend'
 import axios from 'axios'
 import { mapState } from 'vuex'
 export default {

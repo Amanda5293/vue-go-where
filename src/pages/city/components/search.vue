@@ -15,8 +15,8 @@
     </div>
 </template>
 <script>
-import RowTextList from '../components/rowTextList'
-import RowText from '../components/rowText'
+import RowTextList from '../../components/rowTextList'
+import RowText from '../../components/rowText'
 import BScroll from 'better-scroll'
 export default {
   props: {

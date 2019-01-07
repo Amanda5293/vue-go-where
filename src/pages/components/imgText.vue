@@ -1,12 +1,13 @@
 <template>
-    <div class="container border-bottom">
-        <img class="item-img" :src="recommend.imgUrl" alt="recommend.title">
-        <div class="item-info">
-            <p class="item-title">{{recommend.title}}</p>
-            <p class="item-desc">{{recommend.desc}}</p>
-            <button class="detail-btn">查看详情</button>
-        </div>
-    </div>
+    <router-link class="container border-bottom" tag="div"
+            :to="{name:'detail',params:{id:recommend.id}}">
+            <img class="item-img" :src="recommend.imgUrl" alt="recommend.title">
+            <div class="item-info">
+                <p class="item-title">{{recommend.title}}</p>
+                <p class="item-desc">{{recommend.desc}}</p>
+                <button class="detail-btn">查看详情</button>
+            </div>
+    </router-link>
 </template>
 <script>
 export default {

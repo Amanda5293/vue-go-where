@@ -8,8 +8,8 @@
     </div>
 </template>
 <script>
-import BigTitle from './bigTitle'
-import BigImgText from './bigImgText'
+import BigTitle from '../../components/bigTitle'
+import BigImgText from '../../components/bigImgText'
 export default {
   props: {
     weekendList: Array

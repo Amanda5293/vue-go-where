@@ -7,8 +7,8 @@
     </div>
 </template>
 <script>
-import BigTitle from './bigTitle'
-import ImgText from './imgText'
+import BigTitle from '../../components/bigTitle'
+import ImgText from '../../components/imgText'
 export default {
   props: {
     recommendList: Array

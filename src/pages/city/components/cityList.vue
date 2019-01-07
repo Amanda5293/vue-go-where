@@ -17,10 +17,10 @@
     </div>
 </template>
 <script>
-import BigTitle from '../components/bigTitle'
-import ButtonList from '../components/buttonList'
-import ButtonCom from '../components/buttonCom'
-import RowTextList from '../components/rowTextList'
+import BigTitle from '../../components/bigTitle'
+import ButtonList from '../../components/buttonList'
+import ButtonCom from '../../components/buttonCom'
+import RowTextList from '../../components/rowTextList'
 import BScroll from 'better-scroll'
 import { mapState } from 'vuex'
 export default {
