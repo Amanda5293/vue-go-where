@@ -1,25 +1,87 @@
 {
   "ret": true,
   "data": {
-    "sightName": "大连圣亚海洋世界(AAAA景区)",
-    "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
-    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
-    "categoryList": [{
+    "sightName": "故宫(AAAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+    "gallaryImgs": [
+      "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_350x240_8e61302a.jpg",
+      "http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_350x240_df8ba9f7.jpg",
+      "http://img1.qunarzz.com/wugc/p180/201306/16/7f08e81624346b1693835fbb.jpg_350x240_b09a9503.jpg",
+      "http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_350x240_cf4cd08e.png",
+      "http://img1.qunarzz.com/sight/p0/1410/e3/73da8d3e19cdc41c1932d4fcd22ec792.water.jpg_350x240_af846382.jpg",
+      "http://img1.qunarzz.com/sight/p0/1410/9d/fe8109ab5df1c9c324e74284fa802e72.water.jpg_350x240_8571d9ed.jpg",
+      "http://img1.qunarzz.com/wugc/p238/201306/16/d9090c728fed64eb93835fbb.jpg_350x240_afe6c0fa.jpg",
+      "http://img1.qunarzz.com/sight/p0/1501/af/af47583adca3f972.water.jpg_350x240_95007698.jpg"
+    ],
+    "categoryList": [
+      {
         "title": "成人票",
-        "children": [{
-          "title": "成人三馆联票",
-          "children": [{
-            "title": "成人三馆联票 - 某一连锁店销售"
-          }]
-        },{
-          "title": "成人五馆联票"
-        }]
-      }, {
+        "children": [
+          {
+            "title": "成人三馆联票",
+            "children": [
+              {
+                "title": "成人三馆联票 - 某一连锁店销售"
+              }
+            ]
+          },
+          {
+            "title": "成人五馆联票"
+          }
+        ]
+      },
+      {
         "title": "学生票"
-      }, {
+      },
+      {
         "title": "儿童票"
-      }, {
+      },
+      {
         "title": "特惠票"
-      }]
+      }
+    ],
+    "comments": [
+      {
+        "userName":"眯眯兔",
+        "avatorUrl":"https://imgs.qunarzz.com/piao/fusion/1811/77/6766c50067129b02.jpg_240x240_6e07e760.jpg",
+        "score":5,
+        "date":"2017-11-08",
+        "comment":"参观故宫是来京必须要安排的行程，紫禁城的宏伟和惊艳超乎你想象，假装自己穿越时空，你走在乾隆皇帝走过的石板砖上，体验当年盛世的文化底蕴和奢华的生活～ 攻略1 提前网上购买门票，凭身份证直接进 攻略2 租讲解器，每个讲解器都是感应的，每个只讲解一遍，只有一个耳机，别想着两人共用的好事儿，哈哈哈 攻略3 周一闭馆，周末人居多，尽量安排工作日，若所有宫殿都想参观，就提早进去，不过我个人觉得没必要，参观代表性的中轴和个别妃子和慈禧的宫殿即可，建议预留至少大半天时间在里头 再来北京，还愿意去故宫~~",
+        "imgs":[]
+      },
+      {
+        "userName":"无论怎样都要开心呀",
+        "avatorUrl":"https://qcommons.qunar.com/img1/ucenter/headshot/201308/12/7fbb1d65deeabd737c43c4d7.jpg_r_150x150_0f027a97.jpg",
+        "score":5,
+        "date":"2018-01-08",
+        "comment":"本次北京之行，故宫是主要目的地，去哪儿上买票非常方便，不需要换票，直接刷身份证进，秋天的北京，是一年里最好的季节，来故宫的那天，赶上了好天气。秋高气爽，阳光明媚，可以从容的游览故宫，看这些快600岁的红墙绿瓦，加上蓝天和银杏，美不胜收。拍了很多照片这是去故宫最满意的一次。11月1号开始故宫开始执行淡季票价，这里绝对是全国最有良心价的景区，又是世界文化遗产，非常值得多花点时间好好逛逛。",
+        "imgs":[
+          "https://imgs.qunarzz.com/piao/fusion/1811/77/6766c50067129b02.jpg_240x240_6e07e760.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1811/67/5d7d686aba970e02.jpg_240x240_f10f5b99.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1811/af/fcfcab0858df5102.jpg_240x240_ba0cd076.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1811/61/1204e44479edf02.jpg_240x240_11a0f1f5.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1811/f7/fb78d9f32e76a702.jpg_240x240_8ac97a26.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1810/de/41c971dc67ce8c02.jpg_240x240_a0af95d9.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1808/a4/c08d6d0e805ffc02.jpg_240x240_03060ca7.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1808/c7/2671ebcef16dee02.jpg_240x240_183bb4d0.jpg",
+          "https://img1.qunarzz.com/travel/d7/1710/9b/3000443e526b35b5.jpg_r_400x1199x95_dec477fb.jpg",
+          "https://img1.qunarzz.com/travel/d8/1710/25/cd998f4711c465b5.jpg_r_400x2448x95_02c481d0.jpg",
+          "https://img1.qunarzz.com/travel/d8/1710/29/e156a60d3801d4b5.jpg_r_400x1200x95_abf49c6a.jpg",
+          "https://img1.qunarzz.com/travel/d4/1710/39/87d05b7221eaa7b5.jpg_r_400x1600x95_0aac2407.jpg"
+        ]
+      },
+      {
+        "userName":"666的小人",
+        "avatorUrl":"https://qcommons.qunar.com/img1/ucenter/portrait/1808/66/7d355b74df9f9c7e.jpg_r_150x150_7ecaaef4.jpg",
+        "score":4,
+        "date":"2015-01-09",
+        "comment":"于小雷导游认真负责，一天下来没有额外消费很实惠的团，早上和上午逛故宫，中午于导为大家安排午餐很及时，12点就餐完毕，但是于导为我们小伙伴自己都没时间吃饭只打包，真的很感动！午饭后交通很顺畅1.5小时左右到达北京八达岭长城，十几年没来了，依然宏伟壮观！世界的奇迹！下午15:20发车回市里，时间排期游刚刚好～ 很合理有节奏～没浪费一点时间，总之，景色好，路途顺，导游好，一次很值得的一日游活动～",
+        "imgs":[
+          "https://imgs.qunarzz.com/piao/fusion/1811/d6/fd836aeebb7d1b02.jpg_228x168_4da11645.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1811/11/9315fd108bdb0c02.jpg_228x168_a1e9ad7f.jpg",
+          "https://imgs.qunarzz.com/piao/fusion/1811/47/fa1527dd75d2ad02.jpg_228x168_01d5b42c.jpg"
+        ]
+      }
+    ]
   }
 }

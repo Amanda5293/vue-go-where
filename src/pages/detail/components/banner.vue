@@ -1,15 +1,15 @@
 <template>
     <div class="banner">
         <div class="banner-container" @click="handleGallery">
-            <img class="banner-img" src="https://img1.qunarzz.com/sight/p0/1602/68/68aa05adb5315f9990.water.jpg_600x330_0dcecae1.jpg">
+            <img class="banner-img" :src="bannerImg">
             <div class="banner-detail">
-                <div class="banner-title">北京海洋馆(AAAA级景区)</div>
+                <div class="banner-title">{{sightName}}</div>
                 <div class="banner-number">
-                    <span class="iconfont banner-icon">&#xe692;</span>30
+                    <span class="iconfont banner-icon">&#xe692;</span>{{imgsCount}}
                 </div>
             </div>
         </div>
-        <gallery :swiperList="imgs"
+        <gallery :swiperList="gallaryImgs"
                  v-show="showGallery"
                  @close="handleGallery">
         </gallery>
@@ -18,18 +18,20 @@
 <script>
 import Gallery from '../../components/gallery'
 export default {
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   name: 'banner',
   data () {
     return {
-      imgs: [{
-        id: '0001',
-        imgUrl: 'https://img1.qunarzz.com/sight/p0/1602/68/68aa05adb5315f9990.water.jpg_600x330_0dcecae1.jpg'
-      },
-      {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1509/7a/7a684c38571c3b08.img.png_350x240_737ceb2b.png'
-      }],
       showGallery: false
+    }
+  },
+  computed: {
+    imgsCount () {
+      return this.gallaryImgs.length
     }
   },
   components: {
