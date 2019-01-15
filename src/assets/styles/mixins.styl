@@ -2,3 +2,18 @@ ellipsis()
   overflow hidden
   white-space nowrap
   text-overflow ellipsis
+
+mutiEllipsis()
+  position relative
+  line-height .4rem
+  height 1.2rem
+  overflow hidden
+  padding-right .08rem
+  &:after
+    content '...'
+    position absolute
+    right 0
+    bottom 0
+    padding-left .1rem
+    background-image linear-gradient(left,rgba(255,255,255,0.2),rgba(255,255,255,1) 55%)
+
