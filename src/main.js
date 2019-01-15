@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 // 引入swiper 插件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill'
 import 'swiper/dist/css/swiper.css'
 // 解决移动端点击事件300ms延迟
 import fastClick from 'fastclick'

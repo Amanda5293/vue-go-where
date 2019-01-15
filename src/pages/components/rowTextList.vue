@@ -19,7 +19,6 @@ export default {
   },
   methods: {
     select (value) {
-      console.log(111)
       this.changeCity(value)
       this.$router.push('/')
     },
