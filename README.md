@@ -1,4 +1,4 @@
-# vue-go-where
+# vue-travel
 
 > A Vue.js project
 
