@@ -1,8 +1,10 @@
 <template>
     <div class="imgs-text-container">
-        <p :class="textClass">{{text}}</p>
-        <div class="iconfont more-icon" v-show="!showAll" @click="handleShow">&#xe62d;</div>
-        <div class="iconfont up-icon" v-show="showAll" @click="handleShow">&#xe62e;</div>
+        <p :class="textClass" ref="text">{{text}}</p>
+        <div v-if="hasMore">
+          <div class="iconfont more-icon" v-show="!showAll" @click="handleShow">&#xe62d;</div>
+          <div class="iconfont up-icon" v-show="showAll" @click="handleShow">&#xe62e;</div>
+        </div>
         <div class="imgs" v-if="curShowImgs.length">
             <div class="img-container"
                  v-for="(item, index) in curShowImgs"
@@ -32,7 +34,8 @@ export default {
   data () {
     return {
       showGallery: false,
-      showAll: false
+      showAll: false,
+      hasMore: false
     }
   },
   computed: {
@@ -43,11 +46,15 @@ export default {
       return this.imgs.length
     },
     textClass () {
-      if (this.showAll) {
-        return ['text-container']
+      if (this.hasMore && !this.showAll) {
+        return ['text-container', 'ellipsis']
       }
-      return ['text-container', 'ellipsis']
+      return ['text-container']
     }
+  },
+  mounted () {
+    let height = parseInt(window.getComputedStyle(this.$refs.text).height)
+    this.hasMore = this.$refs.text.innerHTML.length > 250 || height > 60
   },
   methods: {
     handleGallery () {
@@ -62,7 +69,7 @@ export default {
 <style lang="stylus" scoped>
     @import '~styles/mixins.styl'
     .gallery>>>.swiper-pagination
-         bottom 1rem !important
+         bottom .3rem !important
     .text-container
         font-size .28rem
         line-height .4rem
