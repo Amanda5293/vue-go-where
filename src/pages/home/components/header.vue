@@ -3,13 +3,14 @@
        <div class="header-left">
            <div class="iconfont back-icon">&#xe624;</div>
        </div>
-       <div class="header-input">
-           <span class="iconfont">&#xe632;</span>
-           输入城市/景点/游玩主题</div>
-       <router-link to="/city">
-            <div class="header-right">
-                {{city}}<span class="iconfont arrow-icon">&#xe64a;</span>
-            </div>
+       <router-link to="/city" tag="div" class="link-container">
+        <div class="header-input">
+            <span class="iconfont">&#xe632;</span>
+            输入城市/景点/游玩主题
+        </div>
+          <div class="header-right">
+                  {{city}}<span class="iconfont arrow-icon">&#xe64a;</span>
+          </div>
        </router-link>
     </div>
 </template>
@@ -33,23 +34,26 @@ export default {
            .back-icon
               text-align center
               font-size .4rem
-        .header-right
-            float right
-            min-width 1.04rem
-            padding 0 .1rem
-            text-align center
-            vertical-align middle
-            color #ffffff
-            .arrow-icon
-                font-size .24rem
-        .header-input
-            flex 1
-            height .64rem
-            margin-top .12rem
-            margin-left .2rem
-            padding-left .2rem
-            border-radius .1rem
-            line-height .64rem
-            background-color #ffffff
-            color #ccc
+        .link-container
+          display flex
+          flex 1
+          .header-right
+              float right
+              min-width 1.04rem
+              padding 0 .1rem
+              text-align center
+              vertical-align middle
+              color #ffffff
+              .arrow-icon
+                  font-size .24rem
+          .header-input
+              flex 1
+              height .64rem
+              margin-top .12rem
+              margin-left .2rem
+              padding-left .2rem
+              border-radius .1rem
+              line-height .64rem
+              background-color #ffffff
+              color #ccc
 </style>

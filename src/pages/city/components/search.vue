@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="search-container">
-            <input  class="search-ipt" type="search"
+            <input  class="search-ipt" type="search" ref="searchIpt"
                     v-model="keyWord"
                     placeholder="输入城市名或拼音">
         </div>
@@ -66,6 +66,9 @@ export default {
   },
   deactivated () {
     this.keyWord = ''
+  },
+  activated () {
+    this.$refs.searchIpt.focus()
   }
 }
 </script>

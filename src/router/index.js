@@ -24,6 +24,7 @@ export default new VueRouter({
       component: Detail
     }
   ],
+  //  对于所有路由导航，简单地让页面滚动到顶部
   scrollBehavior: function (to, from, savedPosition) {
     return savedPosition || { x: 0, y: 0 }
   }
